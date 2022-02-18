@@ -517,6 +517,11 @@ body.overlay::before {
     flex-wrap: wrap;
     gap: 20px;
 }
+@media (max-width: 1024px) {
+    .item {
+        flex-wrap: nowrap;
+    }
+}
 .item a {
     display: flex;
     flex-direction: column;

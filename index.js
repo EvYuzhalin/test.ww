@@ -7,7 +7,6 @@ $(function(){
         dots: false,
         nav: true,
         margin: 0,
-        
     });
     $('.slider2').owlCarousel({
         items: 1,
