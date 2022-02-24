@@ -9,13 +9,19 @@
     font-family: "Futura PT";  
     src: url("./fonts/futura-pt-medium.ttf") format("truetype"); 
     font-style: normal; 
-    font-weight: 500;
+    font-weight: 600;
 }
 @font-face {
     font-family: "Futura PT";  
     src: url("./fonts/futura-pt-light.ttf") format("truetype"); 
     font-style: normal; 
-    font-weight: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Futura PT";  
+    src: url("./fonts/futura-pt-book.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 500;
 }
 /* settings styles */
 *{
@@ -81,7 +87,7 @@ body.overlay::before {
     position: relative;
     width: 100%;
     max-width: 1280px;
-    padding-bottom: 40px;
+    padding-bottom: 120px;
 }
 .modal__block {
     display: none;
@@ -167,12 +173,21 @@ body.overlay::before {
     text-align: left;
 }
 /* header block */
-
+.header {
+    background: #F6F6F6;
+    width: 100%;
+    /* align-items: center; */
+    display: flex;
+    height: 299px;
+    justify-content: center;
+}
 .header__block {
     display: flex;
     flex-direction: column;
     gap: 60px;
     z-index: 1;
+    max-width: 1280px;
+    width: 100%;
 }
 .menu__mobile {
     display: none;
@@ -224,8 +239,8 @@ body.overlay::before {
     display: flex;
     justify-content: space-between;
     max-width: 1280px;
-    padding: 10px;
-    padding-top: 20px;
+    padding: 20px;
+    width: 100%;
 }
 .top__button {
     display: flex;
@@ -234,7 +249,7 @@ body.overlay::before {
 .top__button span {
     font-family: Futura PT;
     font-style: normal;
-    font-weight: 450;
+    font-weight: 600;
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
@@ -256,7 +271,7 @@ body.overlay::before {
 .top__menu a {
     font-family: Futura PT;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
@@ -269,8 +284,9 @@ body.overlay::before {
     display: flex;
     justify-content: space-between;
     max-width: 1280px;
-    padding: 10px;
-    padding-bottom: 45px;
+    padding-top: 49px;
+    /* padding: 10px;
+    padding-bottom: 45px; */
 }
 .header__logo {
     display: flex;
@@ -366,7 +382,7 @@ body.overlay::before {
     .nav__menu a {
         font-family: Futura PT;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 500;
         font-size: 22px;
         line-height: 28px;
         text-transform: uppercase;
@@ -378,7 +394,7 @@ body.overlay::before {
     .ct_butt {
         font-family: Futura PT;
         font-style: normal;
-        font-weight: 450;
+        font-weight: 600;
         font-size: 22px;
         line-height: 28px;
         text-transform: uppercase;
@@ -394,14 +410,7 @@ body.overlay::before {
 /* ****** */
 
 /* banner block*/
-.background__green {
-    width: 100%;
-    height: 299px;
-    background: #F6F6F6;
-    position: absolute;
-    top: 64px;
-    z-index: 0;
-}
+
 .banner__block {
     z-index: 1;
     background-image: url('./images/banner.png');
@@ -414,14 +423,17 @@ body.overlay::before {
     flex-direction: column;
     justify-content: center;
     padding-left: 224px;
+    position: relative;
+    bottom: 151px;  
 }
 .banner__title {
     font-family: Futura PT;
     font-style: normal;
-    font-weight: 450;
+    font-weight: 600;
     font-size: 72px;
     line-height: 92px;
     color: #282828;
+    padding-bottom: 17px;
 }
 .banner__text_block {
     display: flex;
@@ -443,7 +455,7 @@ body.overlay::before {
 .text__red {
     font-family: Futura PT;
     font-style: normal;
-    font-weight: 450;
+    font-weight: 600;
     font-size: 48px;
     line-height: 62px;
     color: #E51A4B;
@@ -457,7 +469,7 @@ body.overlay::before {
     background-color: #E3E1E2;
     font-family: Futura PT;
     font-style: normal;
-    font-weight: 450;
+    font-weight: 600;
     font-size: 20px;
     line-height: 26px;
     text-align: center;
@@ -479,6 +491,7 @@ body.overlay::before {
         gap: 20px;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 }
 @media (min-width: 1713px) {
@@ -493,12 +506,12 @@ body.overlay::before {
 .new__block {
     display: flex;
     flex-direction: column;
-    margin-top: 120px;
+    /* margin-top: 120px; */
 }
 .new__title {
     font-family: Futura PT;
     font-style: normal;
-    font-weight: 450;
+    font-weight: 600;
     font-size: 48px;
     line-height: 62px;
     text-transform: uppercase;
@@ -516,12 +529,22 @@ body.overlay::before {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1279px) {
+    .item_none {
+        display: none;
+    }
+    #owl-carousel-2 {
+        display: flex;
+    }
+    
+}
+/* @media (max-width: 1024px) {
     .item {
         flex-wrap: nowrap;
     }
-}
+} */
 .item a {
     display: flex;
     flex-direction: column;
@@ -532,7 +555,7 @@ body.overlay::before {
 .item span {
     font-family: Futura PT;
     font-style: normal;
-    font-weight: 450;
+    font-weight: 600;
     font-size: 18px;
     line-height: 23px;
     color: #282828;
@@ -579,7 +602,7 @@ body.overlay::before {
 .new__button_black {
     font-family: Futura PT;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     line-height: 23px;
     color: #FFFFFF;
@@ -596,7 +619,7 @@ body.overlay::before {
 .new__button_white {
     font-family: Futura PT;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     line-height: 23px;
     color: #282828;
@@ -653,19 +676,15 @@ body.overlay::before {
     width: 261px;
 }
 .sale {
-    width: 100%;
+    width: 100vw;
     height: 806px;
     background: #F6F6F6;
     position: absolute;
     z-index: 0;
     align-self: center;
-    top: 2024px;
+    top: -100px;
 }
-@media (max-width: 1024px) {
-    .sale {
-        top: 1677px; 
-    }
-}
+
 /* ****** */
 
 /* stock block  */
@@ -682,7 +701,7 @@ body.overlay::before {
 .stock__butt {
     font-family: Futura PT;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     line-height: 23px;
     color: #FFFFFF;
@@ -761,7 +780,7 @@ body.overlay::before {
 .link__text_white {
     font-family: Futura PT;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 24px;
     line-height: 31px;
     color: #FFFFFF;
@@ -813,7 +832,7 @@ body.overlay::before {
 .about__title {
     font-family: Futura PT;
     font-style: normal;
-    font-weight: 450;
+    font-weight: 600;
     font-size: 48px;
     line-height: 62px;
     text-transform: uppercase;
@@ -823,7 +842,7 @@ body.overlay::before {
 .about__text_box p {
     font-family: Futura PT;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 18px;
     line-height: 23px;
     color: #282828;
@@ -834,7 +853,7 @@ body.overlay::before {
 .about__butt {
     font-family: Futura PT;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     line-height: 23px;
     color: #FFFFFF;
@@ -850,7 +869,11 @@ body.overlay::before {
 }
 .about__img_box {
     display: flex;
-    
+}
+@media (max-width: 1024px) {
+    .about__img_box img {
+        width: 100%;
+    }
 }
 .img__width {
     position: absolute;
@@ -874,7 +897,7 @@ body.overlay::before {
 .ceo__title {
     font-family: Futura PT;
     font-style: normal;
-    font-weight: 450;
+    font-weight: 600;
     font-size: 48px;
     line-height: 72px;
     text-transform: uppercase;

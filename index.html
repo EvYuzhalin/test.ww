@@ -11,7 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
-    <script src="index.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 <body class="test">
   <div class="wrapper">
@@ -136,21 +136,21 @@
         </div>
         <span class="close_modal">Закрыть</span>
     </div>
-      <div class="container">
+    <div class="header__block_top">
+        <div class="top__button">
+            <span>Санкт - Петербург</span>
+            <div class="butt__down" type=""></div>
+        </div>
+        <div class="top__menu">
+            <a href="#">Доставка</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Контакты</a>
+        </ul>
+        </div>
+    </div>
+    <div class="header">
+        <div class="header__block">
 
-        <header class="header__block">
-            <div class="header__block_top">
-                <div class="top__button">
-                    <span>Санкт - Петербург</span>
-                    <div class="butt__down" type=""></div>
-                </div>
-                <div class="top__menu">
-                    <a href="#">Доставка</a>
-                    <a href="#">Отзывы</a>
-                    <a href="#">Контакты</a>
-                </ul>
-                </div>
-            </div>
             <div class="header__nav">
                 <div class="header__logo">
                     <img src="./images/logo.png" alt="" class="logo">
@@ -173,7 +173,10 @@
                     <button  class="menu__butt"></button>
                 </div>
             </div> 
-        </header>
+        </div>
+    </div>
+
+      <div class="container">
 
         <div class="banner__block">
             <h1 class="banner__title">Лёгкий шопинг</h1>
@@ -232,7 +235,7 @@
                         <span class="span__red">2999 р.</span>
                     </a>
                 </div>
-                <div class="item">
+                <div class="item item_none">
                     <a href="#" target="_blank" class="">
                         <img src="images/new5.png" alt="">
                         <span>Платье на бретелях из экокожи</span>
@@ -283,6 +286,7 @@
         </div>
 
         <div id="b4" class="sale__block">
+            <div class="sale"></div>
             <h2 class="new__title">SALE</h2>
             <div id="owl-carousel-2" class="owl-carousel slider2">
 
@@ -309,7 +313,7 @@
                     </a>
                 </div>
 
-                <div class="item">
+                <div class="item item_none">
                     <a href="#" target="_blank" class="">
                         <img src="images/new1.png" alt="">
                         <span>Платье на бретелях из экокожи</span>
@@ -394,8 +398,7 @@
 
       </div>
         
-      <div class="background__green"></div>
-      <div class="sale"></div>
+      
   </div>
   <footer class="footer__block">
     <div class="footer__menu">
