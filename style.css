@@ -110,6 +110,7 @@ body.overlay::before {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    position: relative;
 }
 .close_modal {
     font-family: Futura PT;
@@ -117,8 +118,11 @@ body.overlay::before {
     font-weight: normal;
     font-size: 20px;
     line-height: 21px;
-    color: #FFFFFF;
+    color: #282828;
     cursor: pointer;
+    position: absolute;
+    right: 13px;
+    top: 13px;
 }
 .modal__title {
     font-family: Futura PT;
@@ -239,7 +243,8 @@ body.overlay::before {
     display: flex;
     justify-content: space-between;
     max-width: 1280px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 100%;
 }
 .top__button {
@@ -351,8 +356,14 @@ body.overlay::before {
     background-repeat: no-repeat;
     background-color: #F6F6F6;
 }
-@media (max-width: 767px) {
-
+@media (max-width: 1024px) {
+    .header__nav {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+    .header__block_top {
+        padding: 13px;
+    }
 }
 @media (min-width: 768px) and (max-width:1023px) {
 
@@ -540,11 +551,13 @@ body.overlay::before {
     }
     
 }
-/* @media (max-width: 1024px) {
-    .item {
-        flex-wrap: nowrap;
+@media (max-width: 1024px) {
+    .new__title {
+        padding-left: 13px;
+        padding-right: 13px;
+        font-size: 32px;
     }
-} */
+}
 .item a {
     display: flex;
     flex-direction: column;
@@ -698,6 +711,23 @@ body.overlay::before {
     display: flex;
     justify-content: space-between;
 }
+@media (max-width: 1024px) {
+    .stock__header {
+        padding-right: 13px;
+    }
+    .stock__block {
+        margin-top: 100px;
+    }
+    .sale {
+        display: none;
+    }
+    .sale__block {
+        background: #F6F6F6;
+        margin-top: 100px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
 .stock__butt {
     font-family: Futura PT;
     font-style: normal;
@@ -753,6 +783,19 @@ body.overlay::before {
     padding-left: 40px;
     padding-top: 20px;
     padding-bottom: 20px
+}
+@media (max-width: 1024px) {
+    .news__link {
+        width: 100%;
+        padding-left: 20px;
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+    .new__box .width_link {
+        width: 100%;
+        margin-left: 13px;
+        margin-right: 13px;
+    }
 }
 .news__link:hover {
     background-size: 110% 110%;
@@ -824,6 +867,9 @@ body.overlay::before {
     .about__text_box {
         align-items: center;
     }
+    .about__block .about__title {
+        font-size: 32px;
+    }
 }
 .about__text_box {
     display: flex;
@@ -891,7 +937,10 @@ body.overlay::before {
 }
 @media (max-width:1024px) {
     .ceo__block {
-        margin: 20px;
+        margin: 100px;
+    }
+    .ceo__block .ceo__title {
+        font-size: 32px;
     }
 }
 .ceo__title {
